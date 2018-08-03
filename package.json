@@ -1,0 +1,38 @@
+{
+  "name": "phenome-component-github-repos",
+  "version": "1.0.0",
+  "description": "Demo Phenome component to fetch GitHub repos for selected user",
+  "scripts": {
+    "serve-demo": "http-server ./demo/ -o -c 1 -a localhost",
+    "build-demo": "node ./demo/build",
+    "compile": "node ./compile",
+    "build": "npm run compile && npm run build-demo",
+    "start": "node compile && npm run build-demo && npm run serve-demo"
+  },
+  "dependencies": {
+    "phenome": "0.0.17"
+  },
+  "devDependencies": {
+    "buble": "^0.19.3",
+    "http-server": "^0.11.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "rollup": "^0.63.5",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "vue": "^2.5.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phenomejs/phenome-component-github-repos.git"
+  },
+  "author": "Vladimir Kharlampidi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phenomejs/phenome-component-github-repos/issues"
+  },
+  "homepage": "https://github.com/phenomejs/phenome-component-github-repos#readme"
+}
